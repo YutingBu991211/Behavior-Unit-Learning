@@ -1,0 +1,8 @@
+{
+  "n_common_profile_cols": 14,
+  "mean_best_corr_learned_to_baseline": 0.873548025092169,
+  "min_best_corr_learned_to_baseline": 0.5944195541950329,
+  "max_best_corr_learned_to_baseline": 0.9826922321665642,
+  "n_learned_clusters": 8,
+  "n_baseline_clusters": 8
+}

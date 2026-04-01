@@ -1,0 +1,59 @@
+STEP2-4 LEARNED VS BASELINE PROFILE MATCHING
+================================================================================
+learned_profile_csv = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/learned_small_transformer_v1_epoch25_cluster/learned_cluster_profile.csv
+baseline_profile_csv = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/final_baseline_no_delta_depth_total/final_cluster_profile.csv
+
+[summary]
+n_common_profile_cols = 14
+mean_best_corr_learned_to_baseline = 0.873548025092169
+min_best_corr_learned_to_baseline = 0.5944195541950329
+max_best_corr_learned_to_baseline = 0.9826922321665642
+n_learned_clusters = 8
+n_baseline_clusters = 8
+
+[common_profile_cols]
+trade_ratio, cancel_ratio, buy_like_ratio, sell_like_ratio, aggressive_ratio, at_bid1_ratio, at_ask1_ratio, inside_spread_ratio, mean_qty_log1p, mean_top_depth_imbalance, delta_snap_last, delta_depth_imbalance, side_imbalance, top1_pos_imbalance
+
+[learned -> baseline best match]
+ learned_cluster  best_baseline_cluster  best_corr                                              top_matches
+               0                      0   0.982692 baseline_0:0.9827; baseline_6:0.4156; baseline_7:-0.2266
+               1                      1   0.885276  baseline_1:0.8853; baseline_4:0.6405; baseline_6:0.3561
+               2                      5   0.772049  baseline_5:0.7720; baseline_4:0.3147; baseline_2:0.3005
+               3                      2   0.917493  baseline_2:0.9175; baseline_3:0.5177; baseline_7:0.3499
+               4                      0   0.594420  baseline_0:0.5944; baseline_6:0.5187; baseline_1:0.2542
+               5                      7   0.978202 baseline_7:0.9782; baseline_2:0.2689; baseline_3:-0.0306
+               6                      3   0.972032  baseline_3:0.9720; baseline_5:0.5026; baseline_2:0.1957
+               7                      6   0.886220  baseline_6:0.8862; baseline_1:0.2626; baseline_0:0.2451
+
+[baseline -> learned best match]
+ baseline_cluster  best_learned_cluster  best_corr                                          top_matches
+                0                     0   0.982692 learned_0:0.9827; learned_4:0.5944; learned_7:0.2451
+                1                     1   0.885276 learned_1:0.8853; learned_7:0.2626; learned_4:0.2542
+                2                     3   0.917493 learned_3:0.9175; learned_2:0.3005; learned_5:0.2689
+                3                     6   0.972032 learned_6:0.9720; learned_3:0.5177; learned_2:0.0636
+                4                     1   0.640457 learned_1:0.6405; learned_2:0.3147; learned_4:0.0869
+                5                     2   0.772049 learned_2:0.7720; learned_6:0.5026; learned_3:0.1400
+                6                     7   0.886220 learned_7:0.8862; learned_4:0.5187; learned_0:0.4156
+                7                     5   0.978202 learned_5:0.9782; learned_3:0.3499; learned_4:0.1152
+
+[greedy one-to-one match]
+ learned_cluster  baseline_cluster     corr
+               0                 0 0.982692
+               1                 1 0.885276
+               2                 5 0.772049
+               3                 2 0.917493
+               4                 4 0.086873
+               5                 7 0.978202
+               6                 3 0.972032
+               7                 6 0.886220
+
+[profile corr matrix]
+           baseline_0  baseline_1  baseline_2  baseline_3  baseline_4  baseline_5  baseline_6  baseline_7
+learned_0    0.982692   -0.240787   -0.492908   -0.282720   -0.233126   -0.435459    0.415559   -0.226554
+learned_1   -0.297688    0.885276    0.078765   -0.478544    0.640457   -0.024421    0.356131   -0.465754
+learned_2   -0.479254   -0.006219    0.300522    0.063642    0.314730    0.772049   -0.260159   -0.357180
+learned_3   -0.547711   -0.383178    0.917493    0.517719   -0.028438    0.139961   -0.870301    0.349935
+learned_4    0.594420    0.254214   -0.649086   -0.649937    0.086873   -0.450560    0.518659    0.115184
+learned_5   -0.264224   -0.158551    0.268902   -0.030615   -0.305380   -0.256599   -0.395410    0.978202
+learned_6   -0.497359   -0.358195    0.195746    0.972032   -0.295817    0.502573   -0.442452   -0.112484
+learned_7    0.245145    0.262613   -0.592531   -0.100834    0.041619   -0.051310    0.886220   -0.624194

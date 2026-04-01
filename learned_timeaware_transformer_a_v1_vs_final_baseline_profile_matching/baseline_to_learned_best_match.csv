@@ -1,0 +1,9 @@
+baseline_cluster,best_learned_cluster,best_corr,top_matches
+0,7,0.9930198457615974,learned_7:0.9930; learned_0:0.4191; learned_3:-0.0857
+1,5,0.9117605669009683,learned_5:0.9118; learned_0:0.4902; learned_3:0.1918
+2,6,0.8450307580902967,learned_6:0.8450; learned_2:0.4900; learned_4:0.2606
+3,1,0.9311146682838563,learned_1:0.9311; learned_6:0.5852; learned_2:0.4613
+4,5,0.7154390582091761,learned_5:0.7154; learned_3:0.4539; learned_0:0.1849
+5,1,0.6102855899933189,learned_1:0.6103; learned_3:0.4492; learned_2:0.1921
+6,0,0.9532245842612651,learned_0:0.9532; learned_7:0.4088; learned_5:0.3593
+7,4,0.9912164820348258,learned_4:0.9912; learned_6:0.3514; learned_2:0.1966
