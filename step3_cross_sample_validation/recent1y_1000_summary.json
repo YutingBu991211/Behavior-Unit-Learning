@@ -1,0 +1,18 @@
+{
+  "n_total": 999,
+  "n_success": 999,
+  "n_failed": 0,
+  "mean_baseline_silhouette": 0.20923783554806485,
+  "mean_baseline_db": 1.469025793144155,
+  "mean_vanilla25_silhouette": 0.28892815884228823,
+  "mean_vanilla25_db": 1.2555933204212721,
+  "mean_vanilla25_match": 0.7089170228740037,
+  "mean_timeaware25_silhouette": 0.2705028722131694,
+  "mean_timeaware25_db": 1.3073581495109474,
+  "mean_timeaware25_match": 0.7026252786521112,
+  "pct_vanilla25_better_match": 0.5615615615615616,
+  "pct_timeaware25_better_match": 0.43843843843843844,
+  "mean_match_diff_vanilla_minus_timeaware": 0.0062917442218925574,
+  "median_match_diff_vanilla_minus_timeaware": 0.007238848299082723,
+  "final_conclusion": "vanilla25 is preferred as the mainline encoder under current Step3 batch validation"
+}
