@@ -1,0 +1,40 @@
+STEP2 FINAL BASELINE PACKAGE
+================================================================================
+out_dir = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2
+final_run_name = final_baseline_no_delta_depth_total
+
+[baseline protocol]
+drop_feature_cols = ['delta_depth_total']
+pca_n_components = 8
+kmeans_k = 8
+random_state = 42
+kmeans_n_init = 1
+kmeans_max_iter = 30
+silhouette_sample_size = 2000
+
+[metrics]
+{'silhouette_score': 0.16598227620124817, 'davies_bouldin_score': 1.4235349119255694, 'silhouette_n_used': 2000, 'n_clusters': 8, 'n_input_features': 25, 'dropped_constant_cols': [], 'dropped_by_request_cols': ['delta_depth_total']}
+
+[pca_explained_variance_ratio]
+[0.23069354 0.14517995 0.10966869 0.0935599  0.07777223 0.06068991
+ 0.05342769 0.05063257]
+
+[usable_feature_cols]
+['n_events_log1p', 'duration_ms_log1p', 'n_trade_log1p', 'n_add_log1p', 'n_cancel_log1p', 'buy_like_ratio', 'sell_like_ratio', 'aggressive_ratio', 'at_bid1_ratio', 'at_ask1_ratio', 'inside_spread_ratio', 'mean_dt_ms_log1p', 'median_dt_ms_log1p', 'max_dt_ms_log1p', 'mean_qty_log1p', 'mean_spread_abs_log1p', 'mean_top_depth_total_log1p', 'mean_top_depth_imbalance', 'delta_snap_last', 'delta_depth_imbalance', 'trade_ratio', 'add_ratio', 'cancel_ratio', 'side_imbalance', 'top1_pos_imbalance']
+
+[cluster_counts]
+   cluster_kmeans  cluster_size
+0               0           619
+1               1          1588
+2               2          1340
+3               3          1497
+4               4           233
+5               5           193
+6               6          1163
+7               7           795
+
+cluster_counts_file = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/final_baseline_no_delta_depth_total/final_cluster_counts.csv
+cluster_profile_file = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/final_baseline_no_delta_depth_total/final_cluster_profile.csv
+cluster_summary_file = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/final_baseline_no_delta_depth_total/final_cluster_summary.csv
+feature_assignment_file = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/final_baseline_no_delta_depth_total/final_feature_model_with_cluster.csv
+episode_assignment_file = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/final_baseline_no_delta_depth_total/final_episode_assignment.csv

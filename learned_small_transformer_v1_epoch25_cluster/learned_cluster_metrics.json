@@ -1,0 +1,8 @@
+{
+  "silhouette_score": 0.2039969265460968,
+  "davies_bouldin_score": 1.2982163188800102,
+  "silhouette_n_used": 2000,
+  "n_clusters": 8,
+  "n_embedding_dims": 64,
+  "n_common_episodes": 7428
+}

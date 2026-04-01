@@ -1,0 +1,41 @@
+STEP2-4 LEARNED EMBEDDING CLUSTER AUDIT
+================================================================================
+embedding_csv = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/learned_small_transformer_v1_epoch25/episode_embedding_small_transformer_v1.csv
+baseline_feature_csv = /home/bu-yuting/新建文件夹/step2_outputs_validate_baseline_v2/final_baseline_no_delta_depth_total/final_feature_model_with_cluster.csv
+run_name = learned_small_transformer_v1_epoch25_cluster
+
+[metrics]
+silhouette_score = 0.2039969265460968
+davies_bouldin_score = 1.2982163188800102
+silhouette_n_used = 2000
+n_clusters = 8
+n_embedding_dims = 64
+n_common_episodes = 7428
+
+[embedding cols]
+emb_0, emb_1, emb_2, emb_3, emb_4, emb_5, emb_6, emb_7, emb_8, emb_9, emb_10, emb_11, emb_12, emb_13, emb_14, emb_15, emb_16, emb_17, emb_18, emb_19, emb_20, emb_21, emb_22, emb_23, emb_24, emb_25, emb_26, emb_27, emb_28, emb_29, emb_30, emb_31, emb_32, emb_33, emb_34, emb_35, emb_36, emb_37, emb_38, emb_39, emb_40, emb_41, emb_42, emb_43, emb_44, emb_45, emb_46, emb_47, emb_48, emb_49, emb_50, emb_51, emb_52, emb_53, emb_54, emb_55, emb_56, emb_57, emb_58, emb_59, emb_60, emb_61, emb_62, emb_63
+
+[profile cols]
+n_events, duration_ms, trade_ratio, cancel_ratio, buy_like_ratio, sell_like_ratio, aggressive_ratio, at_bid1_ratio, at_ask1_ratio, inside_spread_ratio, mean_dt_ms, max_dt_ms, mean_qty_log1p, mean_spread_abs, mean_top_depth_total, mean_top_depth_imbalance, delta_snap_last, delta_depth_total, delta_depth_imbalance, side_imbalance, top1_pos_imbalance
+
+[cluster counts]
+ cluster_kmeans  cluster_size
+              0           573
+              1          1375
+              2           326
+              3          1719
+              4           141
+              5           669
+              6          1162
+              7          1463
+
+[cluster profile]
+ cluster_kmeans  n_events  duration_ms  trade_ratio  cancel_ratio  buy_like_ratio  sell_like_ratio  aggressive_ratio  at_bid1_ratio  at_ask1_ratio  inside_spread_ratio  mean_dt_ms  max_dt_ms  mean_qty_log1p  mean_spread_abs  mean_top_depth_total  mean_top_depth_imbalance  delta_snap_last  delta_depth_total  delta_depth_imbalance  side_imbalance  top1_pos_imbalance  cluster_size
+              0 24.598604   529.895288     0.750053      0.043597        0.129966         0.076384          0.874024       0.058471       0.815354             0.000354   41.951213 341.657941        7.070760         0.010177         572418.395246                 -0.064783        -0.000070       -5580.280506              -0.010148        0.053582           -0.756883           573
+              1 24.586182  2149.345455     0.174922      0.137755        0.191961         0.492484          0.603881       0.174955       0.295405             0.005291  111.085356 459.141818        6.919387         0.010271         465750.117421                  0.256799        -0.000291       -1887.039905               0.071485       -0.299516           -0.120450          1375
+              2 13.030675    71.840491     0.171021      0.102261        0.268049         0.450920          0.500132       0.149112       0.149156             0.040147    7.395644  36.993865        6.879695         0.013742         532167.805261                 -0.040972         0.000031        3504.239448              -0.000878       -0.182353           -0.000043           326
+              3 19.939500  1705.590460     0.314329      0.111507        0.175297         0.398421          0.282123       0.491193       0.141763             0.001270  105.520865 479.872019        6.856653         0.010070         580784.120588                 -0.384861         0.000215       -1160.980239              -0.077902       -0.222841            0.349430          1719
+              4 30.078014   423.120567     0.756182      0.033289        0.098872         0.111656          0.677084       0.063989       0.120127             0.001013   28.230475 245.460993        7.081024         0.010024         252388.571330                  0.241063        -0.000355       -2438.945461               0.105635       -0.012784           -0.056137           141
+              5 20.466368   706.771300     0.694411      0.053590        0.073641         0.178358          0.102809       0.789491       0.062970             0.000187   56.492610 403.049327        6.867155         0.010072         501785.024923                 -0.066957        -0.000224        -449.598191              -0.010203       -0.104717            0.726521           669
+              6 20.358003  2650.783133     0.175879      0.195501        0.359385         0.261091          0.294549       0.315957       0.181877             0.007507  158.409976 618.519793        6.836190         0.010396         501849.403975                 -0.244823         0.000189        1691.340714              -0.060395        0.097584            0.134080          1162
+              7 18.271360  1495.352016     0.364820      0.103252        0.267570         0.263823          0.649376       0.182299       0.496547             0.000413  105.109548 491.893370        6.876458         0.010029         544293.851424                  0.240092        -0.000068        1909.181073               0.074826        0.003668           -0.314249          1463
